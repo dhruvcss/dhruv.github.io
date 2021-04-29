@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <title>DHRUV PAL | dhruvpal.com</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/b1e689214e.js" crossorigin="anonymous"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+
+    #contentfinal {
+      background-image: url(gf2.jpg);
+      background-size: cover;
+      background-position: center;
+
+    }
+
+
+
+    #navbar {
+      color: white;
+      cursor: pointer;
+    }
+
+    #navbar a {
+      position: relative;
+      transition: 0.6s ease-in;
+
+    }
+
+    #navbar a::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 0%;
+      height: 3px;
+      background-color: #f9cb249a;
+      transition: all 0.5s linear;
+    }
+
+    #navbar a:hover::before {
+      width: 100%;
+      background-color: #f9ca24;
+    }
+
+
+    #parent {
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    #navbar1 {
+      border-bottom: 3px solid #f9ca24;
+    }
+
+    #navbar a:hover {
+      color: #f9ca24;
+    }
+
+
+
+    #btnparent {
+      color: black;
+      background: #f9ca24;
+      font-weight: 900;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+    }
+
+    #btnparent:hover {
+      background: #FC6D6D;
+    }
+
+    #dp {
+      margin-top: 12px;
+      margin-bottom: 12px;
+      color: white;
+      font-weight: 500;
+      font-family: 'Boogaloo', cursive;
+      font-size: 3vw;
+      text-shadow: 5px 5px 2px black;
+    }
+
+
+    #unknown {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    #png {
+      width: 15%;
+    }
+
+    #title {
+      width: 100%;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    #dhruv {
+      font-size: 3vw;
+      font-family: 'Anton', sans-serif;
+      letter-spacing: 5px;
+      text-shadow: 5px 5px 3px black;
+      color: white;
+    }
+
+    #kp {
+      color: #FC6D6D;
+    }
+
+    #dp1 {
+      color: #FC6D6D;
+    }
+
+    .wrapper {
+      margin: 0 auto;
+      padding-left: 20px;
+      width: 30%;
+      background: #343F4F;
+      border-radius: 100px;
+      display: flex;
+
+    }
+
+    .wrapper .static-txt {
+      color: #fff;
+      font-size: 60px;
+      font-weight: 400;
+      font-family: 'Josefin Sans', sans-serif;
+      letter-spacing: 5px;
+      font-family: 'Bebas Neue', cursive;
+    }
+
+    .wrapper .dynamic-txts {
+      margin-left: 5px;
+      height: 90px;
+      overflow: hidden;
+
+    }
+
+    .dynamic-txts li {
+      list-style: none;
+      color: #f9ca24;
+      font-size: 60px;
+      font-weight: 500;
+      position: relative;
+      top: 0;
+      animation: slide 12s steps(4) infinite;
+      font-family: 'Bebas Neue', cursive;
+    }
+
+    @keyframes slide {
+      100% {
+        top: -360px;
+      }
+    }
+
+    .dynamic-txts li span {
+      position: relative;
+      margin: 10px 0;
+      line-height: 90px;
+    }
+
+    .dynamic-txts li span::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 90%;
+      width: 100%;
+      background: #343F4F;
+      border-left: 2px solid #f9ca24;
+      animation: typing 3s steps(10) infinite;
+    }
+
+    @keyframes typing {
+
+      40%,
+      60% {
+        left: calc(100% + 30px);
+      }
+
+      100% {
+        left: 0;
+      }
+    }
+
+
+
+
+
+
+    /* scroll down animation -start */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    .container1 {
+      position: relative;
+      margin-top: 5%;
+      min-height: 5vh;
+      background-image: linear-gradient(to bottom,
+          rgba(0, 0, 0, 0.5) 50%,
+          rgba(0, 0, 0, 0.8) 100%),
+    }
+
+    .icon-scroll,
+    .icon-scroll::before {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .icon-scroll {
+      width: 20px;
+      height: 50px;
+      border: 2px solid #d63031;
+      border-radius: 25px;
+      cursor: pointer;
+      bottom: 2rem;
+    }
+
+    .icon-scroll::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: #fdcb6e;
+      border: 2px solid black;
+      margin-left: -4px;
+      top: 15px;
+      border-radius: 50%;
+      animation: 1.5s scroll cubic-bezier(0.65, -0.55, 0.25, 1.5) infinite;
+    }
+
+    @keyframes scroll {
+      0% {
+        opacity: 0;
+        transform: translateY(0) scale(0.5);
+      }
+
+      10% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      100% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.5);
+      }
+    }
+
+    /* scroll down animation -end */
+
+
+
+
+    #some {
+      text-transform: lowercase;
+    }
+
+
+
+    #what {
+      cursor: pointer;
+    }
+
+
+
+
+    #hoverimg {
+      transition: 0.4s ease-in-out;
+    }
+
+    #hoverimg:hover {
+      transform: scale(1.5);
+    }
+
+    #hoverimg1 {
+      transition: 0.4s ease-in-out;
+    }
+
+    #hoverimg1:hover {
+      transform: scale(1.5);
+    }
+
+    #hoverimg2 {
+      transition: 0.4s ease-in-out;
+    }
+
+    #hoverimg2:hover {
+      transform: scale(1.5);
+    }
+
+
+
+    .containerfulfinal {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      flex-direction: column;
+      padding: 50px 0;
+      transform-style: preserve-3d;
+    }
+
+    .containerfulfinal .boxfulfinal {
+      position: relative;
+      width: 450px;
+      height: 300px;
+      margin: 60px 0;
+      background: #000;
+      background: #000;
+      transform-style: preserve-3d;
+    }
+
+    .containerfulfinal .boxfulfinal:hover {
+      box-shadow: 0 50px 80px rgba(0, 0, 0, .1);
+    }
+
+    .containerfulfinal .boxfulfinal .imgBxfulfinal {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .containerfulfinal .boxfulfinal .contentBxfulfinal {
+      position: absolute;
+      top: 50%;
+      left: 50px;
+      right: 50px;
+      background: linear-gradient(to bottom , #348F50, #56B4D3);
+      border: 3px solid yellow;
+      transform: translateZ(20px) scaleY(0);
+      box-shadow: 3px 3px 8px black;
+      padding: 40px 25px;
+      transform-origin: top;
+      transition: 0.5s;
+      transform-style: preserve-3d;
+      font-family: 'Fredoka One', cursive;
+    }
+
+    .containerfulfinal .boxfulfinal:hover .contentBxfulfinal {
+      transform: translateZ(50px) scaleY(1);
+    }
+
+
+    #sahil {
+      text-align: center;
+      margin-top: 5%;
+    }
+
+
+
+    #loader-wrapper {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 999999;
+    }
+
+
+
+
+    #contentfinal {
+      display: none;
+    }
+
+
+
+    .cardbody {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .profile-card {
+      width: 400px;
+      text-align: center;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .card-header {
+      background: #2c3a47;
+      padding: 60px 40px;
+    }
+
+    .pic {
+      display: inline-block;
+      padding: 8px;
+      background: linear-gradient(130deg, #c2e59c, #64b3f4);
+      margin: auto;
+      border-radius: 50%;
+      background-size: 200% 200%;
+      animation: animated-gradient 2s linear infinite;
+    }
+
+    @keyframes animated-gradient {
+      25% {
+        background-position: left bottom;
+      }
+
+      50% {
+        background-position: right bottom;
+      }
+
+      75% {
+        background-position: right top;
+      }
+
+      100% {
+        background-position: left top;
+      }
+    }
+
+    .pic img {
+      display: block;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+
+    .name {
+      color: #f2f2f2;
+      font-size: 20px;
+      font-weight: 600;
+      margin: 10px 0;
+    }
+
+    .desc {
+      font-size: 18px;
+      color: #e66767;
+    }
+
+    .sm {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+
+    .sm a {
+      color: #f2f2f2;
+      width: 56px;
+      font-size: 22px;
+      transition: .3s linear;
+    }
+
+    .sm a:hover {
+      color: #e66767;
+    }
+
+    .contact-btn {
+      display: inline-block;
+      padding: 12px 50px;
+      color: #e66767;
+      border: 2px solid #e66767;
+      border-radius: 6px;
+      margin-top: 16px;
+      transition: .3s linear;
+    }
+
+    .contact-btn:hover {
+      background: #e66767;
+      color: #f2f2f2;
+    }
+
+    .card-footer {
+      background: #e66767;
+      padding: 60px 10px;
+    }
+
+    .numbers {
+      display: flex;
+      align-items: center;
+    }
+
+    .item {
+      flex: 1;
+      text-transform: uppercase;
+      font-size: 13px;
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .item span {
+      display: block;
+      color: #2c3a47;
+      font-size: 30px;
+    }
+
+    .border {
+      width: 1px;
+      height: 30px;
+      background: #fff;
+    }
+
+
+    .to-top {
+      background: linear-gradient(to bottom, #FC6D6D, #f9ca24);
+      position: fixed;
+      border: 2px solid black;
+      bottom: 16px;
+      right: 32px;
+      width: 50px;
+      z-index: 999998;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      color: #1f1f1f;
+      text-decoration: none;
+      opacity: 0;
+      pointer-events: none;
+      transition: all .4s;
+    }
+
+    .to-top.active {
+      bottom: 32px;
+      pointer-events: auto;
+      opacity: 1;
+    }
+
+
+
+    #sec-2 {
+      font-family: 'Righteous', cursive;
+    }
+
+
+    .cardbody {
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    /* contact us start */
+
+    .contact-form {
+      width: 85%;
+      max-width: 600px;
+      background: #f1f1f1;
+      /* position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); */
+      padding: 30px 40px;
+      box-sizing: border-box;
+      border-radius: 8px;
+      text-align: center;
+      margin: 20px auto;
+      box-shadow: 0 0 20px #000000b3;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .contact-form h1 {
+      margin-top: 0;
+      font-weight: 200;
+    }
+
+    .txtb {
+      border: 1px solid gray;
+      margin: 8px 0;
+      padding: 12px 18px;
+      border-radius: 8px;
+    }
+
+    .txtb label {
+      display: block;
+      text-align: left;
+      color: #333;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+
+    .txtb input,
+    .txtb textarea {
+      width: 100%;
+      border: none;
+      background: none;
+      outline: none;
+      font-size: 18px;
+      margin-top: 6px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #9b59b6;
+      padding: 14px 0;
+      color: white;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin-top: 8px;
+      width: 100%;
+    }
+
+    /* contact us end */
+
+
+
+
+#projects{
+  font-family: 'Alata', sans-serif;
+}
+
+
+
+#sec-2{
+  display: none;
+}
+#loader-wrapper{
+  background: rgb(1, 14, 83);
+}
+#container1{
+  display: none;
+}
+
+
+
+
+
+
+
+/* quote card start*/
+
+  .quotebodytrial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:  #08001b;
+    font-family: 'Baloo Tammudu 2', cursive;
+  }
+
+  .quotetrial{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .quotetrial .cardtrial{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #0c002b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  .quotetrial:hover .cardtrial{
+    opacity: 0.5;
+  }
+  .quotetrial .cardtrial:hover{
+    opacity: 1;
+  }
+
+  .quotetrial .cardtrial::before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 50%;
+    background: rgba(255,255,255,0.1);
+    pointer-events: none;
+  }
+
+  .quotetrial .cardtrial .contenttrial{
+    padding: 30px;
+    text-align: center;
+  }
+
+  .quotetrial .cardtrial .contenttrial h2{
+    position: absolute;
+    right: 30px;
+    font-size: 3em;
+    font-weight: 800;
+    color: #1779ff;
+    z-index: 999996;
+    opacity: 0.1;
+    transition: 0.5s;
+  }
+
+  .quotetrial .cardtrial:hover .contenttrial h2{
+    opacity: 1;
+    transform: translateY(-70px);
+  }
+
+  .quotetrial .cardtrial .contenttrial h3{
+    position: relative;
+    font-size: 1.5em;
+    color: #fff;
+    display: none;
+    z-index: 999997;
+    opacity: 0.5;
+    letter-spacing: 1px;
+    transition: 0.5s;
+  }
+
+  .quotetrial .cardtrial .contenttrial p{
+    position: relative;
+    font-size: 1em;
+    color: #fff;
+    z-index: 999997;
+    opacity: 0.8;
+    font-weight: 300;
+    letter-spacing: 1px;
+    transition: 0.5s;
+  }
+
+  .quotetrial .cardtrial:hover .contenttrial h3,
+  .quotetrial .cardtrial:hover .contenttrial p
+  {
+      opacity: 1;
+  }
+
+  .quotetrial .cardtrial .contenttrial a{
+    display: inline-block;
+    margin-top: 25px;
+    padding: 4px 15px;
+    background: #fff;
+    color: #0c002b;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.4s ease-in-out;
+  }
+  .quotetrial .cardtrial .contenttrial a:hover{
+    color: white;
+    background: #1779ff;
+  }
+
+  .quotetrial .cardtrial span{
+    transition: 0.5s;
+  }
+  
+  .quotetrial .cardtrial span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #1779ff);
+    animation: animate1 2s linear infinite;
+  }
+  @keyframes animate1{
+    0%{
+      transform: translateX(-100%);
+    }
+    100%{
+      transform: translateX(100%);
+    }
+  }
+
+
+  .quotetrial .cardtrial span:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, #1779ff);
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+  }
+  @keyframes animate2{
+    0%{
+      transform: translateY(-100%);
+    }
+    100%{
+      transform: translateY(100%);
+    }
+  }
+
+
+
+  .quotetrial .cardtrial span:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, transparent, #1779ff);
+    animation: animate3 2s linear infinite;
+  }
+  @keyframes animate3{
+    0%{
+      transform: translateX(100%);
+    }
+    100%{
+      transform: translateX(-100%);
+    }
+  }
+
+
+  .quotetrial .cardtrial span:nth-child(4){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, #1779ff);
+    animation: animate4 2s linear infinite;
+    animation-delay: 1s;
+  }
+  @keyframes animate4{
+    0%{
+      transform: translateY(100%);
+    }
+    100%{
+      transform: translateY(-100%);
+    }
+  }
+
+
+/* quote card end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* media query all */
+
+
+    @media only screen and (max-width:500px) {
+      .un img {
+        margin-left: 0;
+      }
+
+      #sec-1 {
+        display: none;
+      }
+
+      #contentfinal {
+        background-image: url(gf.jpg);
+      }
+
+    }
+
+    @media only screen and (max-width:900px) {
+      #sec-1 {
+        display: none;
+      }
+
+      .containerfulfinal {
+        display: none;
+      }
+
+      #sahil {
+        display: none;
+      }
+    }
+
+
+    @media only screen and (min-width:10px) and (max-width:1490px) {
+      #unknown {
+        display: none;
+      }
+    }
+
+    @media only screen and (min-width:10px) and (max-width:770px) {
+      .container1 {
+        margin-top: 10%;
+      }
+
+    }
+
+
+    @media only screen and (min-width:10px) and (max-width:550px) {
+      .container1 {
+        margin-top: 20%;
+      }
+
+    }
+  </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+  <div id="loader-wrapper">
+    <img src="loader.gif" alt="">
+  </div>
+
+
+
+  <script>
+    window.onload = function () {
+      document.getElementById('loader-wrapper').style.display = "none";
+      document.getElementById('contentfinal').style.display = "block";
+      document.getElementById('sec-2').style.display = "block";
+      document.getElementById('container1').style.display = "block";
+    };
+  </script>
+
+  <div id="contentfinal">
+    <!-- header -->
+    <header id="parent" class="text-gray-600 body-font">
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+
+          <span class="ml-3 text-xl"><img src="logo1.png" alt="logo" width="100px" height="50px"></span>
+        </a>
+        <nav id="navbar"
+          class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 flex flex-wrap items-center text-base justify-center">
+          <a id="navbar1" class="mr-5" href="#parent">Home</a>
+          <a id="navbar2" class="mr-5" href="#projects">Projects</a>
+          <a id="navbar3" class="mr-5" href="#cardbody">Card</a>
+          <a id="navbar4" class="mr-5" href="#quotebodytrial">Quote</a>
+        </nav>
+        <button. class="inline-flex items-center border-0 py-1 px-3 focus:outline-none rounded text-base mt-4 md:mt-0"
+          id="btnparent"> <a href="https://www.youtube.com/channel/UC2cidfOfDkWw_DjHl2-9rxg" target="_blank">Youtube</a>
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+          </button>
+      </div>
+    </header>
+    <!-- header -->
+
+
+
+    <!-- hero -->
+    <section id="home" class="text-gray-600 body-font">
+
+
+      <img class="xl:w-1/4 lg:w-1/3 md:w-1/2 w-2/3 block mx-auto mb-10 object-cover object-center rounded" alt="hero"
+        src="logo.png" id="png">
+      <div id="title">
+        <h1 id="dhruv">WELCOME TO <span id="kp"> DHRUVPAL.COM </span> </h1>
+      </div>
+
+      <div id="anime" class="flex flex-col text-center w-full">
+        <div id="unknown">
+          <div class="wrapper">
+            <div class="static-txt">I am a</div>
+            <ul class="dynamic-txts">
+              <li><span>YouTuber</span></li>
+              <li><span> Programmer</span></li>
+              <li><span> developer</span></li>
+              <li><span>Freelancer</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <p id="dp" class="lg:w-2/3 mx-auto leading-relaxed text-white">“ <span id="dp1">Experience</span> is the name
+          everyone give to their <span id="dp1">mistakes</span> ”</p>
+      </div>
+
+    </section>
+
+
+
+  </div>
+
+  <!-- hero -->
+
+
+
+
+
+
+  <div id="container1" class="container1">
+    <div class="icon-scroll"></div>
+  </div>
+
+
+
+  <a href="#" class="to-top" id="to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+
+
+
+
+  <!-- content -->
+  <section id="sec-2" class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">WHAT DO I KNOW</h1>
+
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">I have given the data about which programming languages i
+          Know and for how
+          many years i have worked on them and still working.
+          Hover on these images to get the exact details
+        </p>
+
+      </div>
+
+      <div id="what" class="flex flex-wrap -m-4">
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="html.png">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">HTML</h1>
+              <p class="leading-relaxed">this was my first web development language.it's learning Experience
+                was amazing.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="css.png">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">CSS</h1>
+              <p class="leading-relaxed">this language is my favourite language.i started working on this language in
+                Jan 2019 and still i
+                am using it a lot.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="js.png">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">JAVASCRIPT</h1>
+              <p class="leading-relaxed">during my learning time i have so many
+                doubts in this language but now it's all clear.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="mysql.png">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">MYSQL</h1>
+              <p class="leading-relaxed">I am a newbie in this language
+                so i am not advanced in this language but i know the basics
+                of this language.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="php.png">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">PHP</h1>
+              <p class="leading-relaxed">I am a newbie in this language
+                so i am not advanced in this language but i know the basics
+                of this language.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="cs.png">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">UPCOMING</h1>
+              <p class="leading-relaxed">I will surely start some new languages in the upcoming future </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- content -->
+
+
+
+
+  <div id="cardbody" class="cardbody">
+    <div class="profile-card">
+      <div class="card-header">
+        <div class="pic">
+          <img src="front.jpg" alt="logo">
+        </div>
+        <div class="name">Dhruv Pal</div>
+        <div class="desc">Programmer & Developer</div>
+        <div class="sm">
+          <a href="https://www.facebook.com/dhruv.p.716/" class="fab fa-facebook-f" target="_blank"></a>
+          <a href="https://www.instagram.com/dhruv_2005p/" class="fab fa-instagram" target="_blank"></a>
+          <a href="index2.html" class="fab fa-github" target="_blank"></a>
+          <a href="https://www.youtube.com/channel/UC2cidfOfDkWw_DjHl2-9rxg" class="fab fa-youtube" target="_blank"></a>
+        </div>
+        <a href="index2.html" class="contact-btn" target="_blank">Contact Me</a>
+      </div>
+      <div class="card-footer">
+        <div class="numbers">
+          <div class="item">
+            <span>2</span>
+            Posts
+          </div>
+          <div class="border"></div>
+          <div class="item">
+            <span>75</span>
+            following
+          </div>
+          <div class="border"></div>
+          <div class="item">
+            <span>45</span>
+            Followers
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- content 2 -->
+
+
+  <section class="text-gray-600 body-font" id="projects">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col">
+        <div class="h-1 bg-gray-200 rounded overflow-hidden">
+          <div class="w-24 h-full bg-green-500"></div>
+        </div>
+        <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+          <h1 class="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">MY PROJECTS</h1>
+          <p id="some" class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">I HAVE MADE SO MANY WEB DEVELOPMENT
+            PROJECTS,
+            THESE ARE SOME OF THEM,HOPE YOU
+            WILL LIKE IT AND DON'T FORGET TO SCROLL DOWN,SOME CONTENT IS WAITING FOR YOU</p>
+        </div>
+      </div>
+      <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" id="hoverimg" class="object-cover object-center h-full w-full" src="img1.jpg">
+          </div>
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">MERA BHARAT</h2>
+          <p class="text-base leading-relaxed mt-2">This was the first website made by me.It was made using html and css
+            . I have also given
+            a text changing animation which was basically changing the name of states.
+          </p>
+        </div>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" id="hoverimg1" src="img2.jpg">
+          </div>
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">SIGN IN/UP</h2>
+          <p class="text-base leading-relaxed mt-2">It was a basic design which was made using html css and i have also
+            used
+            a little bit of javascript for displaying some messages on button click.it's work was to get sign in and
+            sign up details from user.
+          </p>
+        </div>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" id="hoverimg2" src="img3.png">
+          </div>
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">DIGITAL MARKETTING</h2>
+          <p class="text-base leading-relaxed mt-2">This is my first responsive design which is made for digital
+            marketting content.in this
+            design i have used html , css , js and php for taking the data from user to my database.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- content 2 -->
+
+
+
+
+
+
+  <!-- youtube -->
+  <div class="headsp">
+    <h1 id="sahil" class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Move your mouse over this!
+    </h1>
+  </div>
+
+  <div class="containerfulfinal">
+    <div class="boxfulfinal">
+      <div class="imgBxfulfinal">
+        <img src="card.png" alt="card">
+      </div>
+      <div class="contentBxfulfinal">
+        <h2> <strong>DHRUV PAL</strong> </h2>
+        <p>Hello everyone,i am a frontend webdeveloper . this is my personal portfolio . i have used some languages Like
+          html , css and javascript . hope you liked my website . thanks for visiting.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- role model thoughts -->
+  <div id="quotebodytrial" class="quotebodytrial">
+    <div class="quotetrial">
+      <div class="cardtrial">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class="contenttrial">
+            <h2>DHRUV</h2>
+            <h3>post title</h3>
+            <p>“Any fool can write code that a computer can understand. 
+              Good programmers write code that humans can understand.” </p>
+              <a href="https://en.wikipedia.org/wiki/Computer_programming" target="_blank">Read more</a>
+          </div>
+      </div>
+  
+    </div>
+  </div>
+  <!-- role model thoughts -->
+
+
+  <!-- contact us start -->
+
+  <!-- <form action="connect.php" method="POST">
+    <div id="contactus" class="contact-form">
+    
+      <h1>Contact Us</h1>
+      <div class="txtb">
+        <label>Full Name :</label>
+        <input type="text" name="firstname" value="" placeholder="Enter Your Name">
+      </div>
+  
+      <div class="txtb">
+        <label>Email :</label>
+        <input type="email" name="email" value="" placeholder="Enter Your Email">
+      </div>
+  
+      <div class="txtb">
+        <label>Phone Number :</label>
+        <input type="text" name="number" value="" placeholder="Enter Your Phone Number">
+      </div>
+  
+      <div class="txtb">
+        <label>Message :</label>
+        <textarea name="contact"></textarea>
+      </div>
+      <input type="submit" class="btn">
+    </div>
+  </form> -->
+    
+ 
+
+  <!-- contact us end -->
+
+  <!-- footer -->
+  <div class="bg-gray-100">
+    <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <span class="ml-3 text-xl">Dhruvpal.com</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2020-2022 Dhruvpal —
+        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1"
+          target="_blank">@Techgrab</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-black">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+            viewBox="0 0 24 24">
+            <a href="https://www.facebook.com/dhruv.p.716/" target="_blank"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path></a>
+            
+          </svg>
+        </a>
+        <a class="ml-3 text-black">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <a href="https://www.instagram.com/dhruv_2005p/" target="_blank">
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </a>
+            
+          </svg>
+        </a>
+        <a class="ml-3 text-black">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <a href="index2.html" target="_blank4">
+              <path stroke="none"
+              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            </a>
+            
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </div>
+
+
+
+
+  <!-- footer -->
+
+
+
+
+  
+
+
+
+
+
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelectorAll(".boxfulfinal"), {
+      max: 25,
+      speed: 400
+    });
+
+  </script>
+
+
+
+  <script src="main.js">
+
+  </script>
+
+
+
+</body>
+
+</html>
